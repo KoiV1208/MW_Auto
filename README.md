@@ -2,8 +2,9 @@
 
 Moderne, responsive Website für **MW Automobile** (Michael Wirtz), Fahrzeugvermittlung
 für Cabrios & Sportwagen in Rösrath bei Köln. Inspiriert von der bestehenden Seite
-[mwauto.de](https://mwauto.de), neu konzipiert im Premium-Dark-Design mit
-Orange-Gold-Akzent.
+[mwauto.de](https://mwauto.de) sowie einem eigenen Design-Entwurf des Kunden;
+umgesetzt in einem hellen, fotografiegetriebenen Design mit kräftiger, großgeschriebener
+Typografie und Orange als Markenfarbe.
 
 ## Tech-Stack
 
@@ -40,14 +41,19 @@ python3 -m http.server 8080
 
 ## Design
 
-- **Farben:** Dunkles Anthrazit/Schwarz (`--bg`) mit Orange-Gold-Akzent (`--accent`).
-  Alle Tokens zentral in `assets/css/style.css` (`:root`) definierbar.
-- **Typografie:** „Playfair Display“ (Überschriften) + „Inter“ (Fließtext), via Google Fonts.
+- **Farben:** Weiß/helles Warmgrau (`--bg`, `--bg-alt`) im Wechsel mit dunklen Bändern
+  (`--bg-dark`, z. B. USP-, Testimonial- und Footer-Bereich) und Orange als Akzent
+  (`--accent`). Alle Tokens zentral in `assets/css/style.css` (`:root`) definierbar.
+- **Typografie:** „Poppins“ (fett, großgeschrieben, für Überschriften/Buttons/Labels) +
+  „Inter“ (Fließtext), via Google Fonts.
 - **Responsive:** Mobile-first mit Breakpoints bei 1024px / 860px / 640px, inkl.
   Hamburger-Menü für kleine Bildschirme.
-- **Platzhalter:** Fahrzeug- und Portraitbilder sind bewusst als edle SVG-Line-Art-
-  Grafiken umgesetzt (kein Hotlinking auf externe Stockfotos, dadurch keine toten
-  Bilder). Vor dem Live-Gang durch echte Fotos (Fahrzeuge, Michael Wirtz) ersetzen.
+- **Bilder:** Hero, Fahrzeugkarten, CTA-Banner und die Porträt-/„Über mich“-Fläche
+  nutzen lizenzfreie Platzhalter-Fotos von [Unsplash](https://unsplash.com) (direkt
+  verlinkt über `images.unsplash.com`). Für die Porträt-Fläche wurde bewusst ein
+  gesichtsloses Motiv (Hände am Lenkrad) gewählt statt eines Fremdfotos, das
+  fälschlich als Michael Wirtz durchgehen könnte. Vor dem Live-Gang durch echte
+  Fotos (Fahrzeugbestand, Porträt von Michael Wirtz) ersetzen.
 
 ## Offene Punkte vor dem Live-Gang
 
@@ -56,6 +62,10 @@ python3 -m http.server 8080
    anbinden (Formular-`action`/`fetch` in `kontakt.html` / `main.js` ergänzen).
 2. **Impressum & Datenschutz:** enthalten Platzhalter (z. B. USt-ID) — vor
    Veröffentlichung rechtlich prüfen lassen.
-3. **Bilder:** SVG-Platzhalter durch echte Fotos (Fahrzeuge, Portrait) ersetzen.
+3. **Bilder:** Unsplash-Platzhalterfotos durch echte Fotos (Fahrzeugbestand, Porträt
+   von Michael Wirtz) ersetzen — Pfade liegen in `index.html`, `fahrzeuge.html`,
+   `ueber-uns.html` und `assets/css/style.css` (Hero- & CTA-Hintergrund).
 4. **Fahrzeugbestand:** Beispiel-Fahrzeuge in `fahrzeuge.html` / `index.html` durch
    echten, aktuellen Bestand ersetzen oder dynamisch aus mobile.de einbinden.
+5. **Bewertungen:** „4,8 von 84 Bewertungen“ ist ein Platzhalterwert — durch die
+   echte mobile.de-Bewertung ersetzen.
