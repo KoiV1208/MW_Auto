@@ -215,10 +215,10 @@ h1,h2,h3,h4{
   display:flex; align-items:flex-end;
   padding:64px 0 76px;
   background-image:
-    linear-gradient(100deg, rgba(10,9,8,.92) 0%, rgba(10,9,8,.66) 42%, rgba(10,9,8,.22) 70%, rgba(10,9,8,.05) 100%),
-    url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1800&q=75&auto=format&fit=crop');
+    linear-gradient(100deg, rgba(10,9,8,.86) 0%, rgba(10,9,8,.58) 38%, rgba(10,9,8,.18) 68%, rgba(10,9,8,.02) 100%),
+    url('../img/hero-michael-wirtz.png');
   background-size:cover;
-  background-position:center;
+  background-position:center 30%;
   color:#fff;
 }
 .hero .eyebrow{ color:var(--accent-light); }
@@ -423,7 +423,7 @@ h1,h2,h3,h4{
   display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;
   background-image:
     linear-gradient(100deg, rgba(10,9,8,.90) 10%, rgba(10,9,8,.5) 60%, rgba(10,9,8,.25) 100%),
-    url('https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?w=1600&q=70&auto=format&fit=crop');
+    url('https://images.unsplash.com/photo-1493238792000-8113da705763?w=1600&q=70&auto=format&fit=crop');
   background-size:cover;
   background-position:center;
 }
