@@ -16,7 +16,8 @@ Webhosting).
 /
 ├── index.html          Startseite
 ├── ueber-uns.html       Über Michael Wirtz
-├── fahrzeuge.html        Fahrzeugbestand (mit Filter)
+├── fahrzeuge_inaktiv.html  Alte interne Fahrzeugübersicht (nicht mehr verlinkt —
+│                            "Fahrzeuge"-Links zeigen jetzt direkt auf mobile.de)
 ├── ablauf.html            Ablauf Kauf & Verkauf
 ├── referenzen.html        Kundenstimmen
 ├── faq.html                Häufige Fragen (Accordion)
@@ -63,9 +64,11 @@ python3 -m http.server 8080
 2. **Impressum & Datenschutz:** enthalten Platzhalter (z. B. USt-ID) — vor
    Veröffentlichung rechtlich prüfen lassen.
 3. **Bilder:** Unsplash-Platzhalterfotos durch echte Fotos (Fahrzeugbestand, Porträt
-   von Michael Wirtz) ersetzen — Pfade liegen in `index.html`, `fahrzeuge.html`,
+   von Michael Wirtz) ersetzen — Pfade liegen in `index.html`, `fahrzeuge_inaktiv.html`,
    `ueber-uns.html` und `assets/css/style.css` (Hero- & CTA-Hintergrund).
-4. **Fahrzeugbestand:** Beispiel-Fahrzeuge in `fahrzeuge.html` / `index.html` durch
-   echten, aktuellen Bestand ersetzen oder dynamisch aus mobile.de einbinden.
+4. **Fahrzeugbestand:** ✅ Erledigt — alle „Fahrzeuge"-Links zeigen direkt auf den
+   echten mobile.de-Händlerbestand (`https://home.mobile.de/MW_AUTOMOBILE#ses`),
+   eine automatische mobile.de-API-Synchronisierung würde ein Händlerkonto sowie
+   ein serverseitiges Sync-Skript voraussetzen (siehe Chatverlauf).
 5. **Bewertungen:** „4,8 von 84 Bewertungen“ ist ein Platzhalterwert — durch die
    echte mobile.de-Bewertung ersetzen.
